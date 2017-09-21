@@ -52,9 +52,9 @@ function analysePage(url) {
                 }
             });
             console.log(area);
-            // fs.writeFile('./txt.txt', codes, (err) => {
-            //     console.log(err);
-            // });
+            fs.writeFile('./txt.txt', codes, (err) => {
+                console.log(err);
+            });
             
         } else {
             console.log('+++++粗错啦！++++++', err, 'code: ' + res.statusCode);
